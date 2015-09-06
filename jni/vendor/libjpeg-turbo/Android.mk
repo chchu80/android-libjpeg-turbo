@@ -85,6 +85,9 @@ LOCAL_CFLAGS += \
 	-DSIZEOF_SIZE_T=4 \
 
 else ifeq ($(TARGET_ARCH_ABI),armeabi)
+LOCAL_SRC_FILES += \
+	$(SOURCE_PATH)/jsimd_none.c \
+
 LOCAL_CFLAGS += \
 	-DSIZEOF_SIZE_T=4 \
 
